@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes} from 'react-router-dom';
+import Home from './Home/Home';
+import MeetTherapists from './MeetTherapists/MeetTherapists';
+import SpecialtyAreas from './SpecialtyAreas/SpecialtyAreas';
+import CareerOpportunities from './CareerOpportunities/CareerOpportunities';
+import ContactUs from './ContactUs/ContactUs';
+import Header from './Header';
+import style from './App.module.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className='container'>
+      <Header />
+      <div className={style.content}>
+        <Routes>
+
+          <Route path={'/'} element={<Home />} />
+          <Route path={'/therapists'} element={<MeetTherapists />} />
+          <Route path={'/specialties'} element={<SpecialtyAreas />} />
+          <Route path={'/careers'} element={<CareerOpportunities />} />
+          <Route path={'/contact'} element={<ContactUs />} />
+        </Routes>
+
+      </div>
+
+    </main>
   );
 }
 

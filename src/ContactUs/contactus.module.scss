@@ -1,0 +1,41 @@
+@import '../App.module.scss';
+
+.contact-container {
+  input {
+    line-height: 2;
+    border-width: 1px;
+  }
+  
+  input,
+  textarea {
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+
+  .contact-names,
+  .contact-email,
+  .contact-message {
+    display: flex;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: $small-breakpoint) {
+    .contact-names,
+    .contact-email,
+    .contact-message {
+      flex-direction: column;
+    }
+
+    .contact-message {
+      textarea {
+        height: 12rem;
+        margin-bottom: 1rem;
+        resize: none;
+      }
+    }
+  }
+}

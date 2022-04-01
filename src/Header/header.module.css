@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Tillana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap");
+.content {
+  margin: 1rem;
+}
+
+.content p {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-image: linear-gradient(45deg, white, #90c1d7 60%, #5750c9, #020056);
+  font-family: 'Qwitcher Grypen', cursive;
+  width: 100%;
+}
+
+.header div:first-of-type {
+  margin-left: 4rem;
+}
+
+.header h1 {
+  font-size: 3.25rem;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.header .hamburger {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 7.5rem;
+  }
+  .header div:first-of-type {
+    margin-left: 1rem;
+  }
+  .header h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .header h3 {
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    letter-spacing: 1px;
+  }
+  .header ul {
+    display: block;
+    width: 100%;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+  }
+  .header .hamburger {
+    position: absolute;
+    right: 1.5rem;
+    top: 2rem;
+    width: 1.7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid white;
+    height: 1.5rem;
+    border-radius: 3px;
+    color: white;
+  }
+}
+/*# sourceMappingURL=header.module.css.map */

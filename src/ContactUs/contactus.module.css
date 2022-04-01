@@ -1,0 +1,55 @@
+.content {
+  margin: 1rem;
+}
+
+.content p {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
+.contact-container input {
+  line-height: 2;
+  border-width: 1px;
+}
+
+.contact-container input,
+.contact-container textarea {
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.contact-container .contact-names,
+.contact-container .contact-email,
+.contact-container .contact-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-container .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 600px) {
+  .contact-container .contact-names,
+  .contact-container .contact-email,
+  .contact-container .contact-message {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-container .contact-message textarea {
+    height: 12rem;
+    margin-bottom: 1rem;
+    resize: none;
+  }
+}
+/*# sourceMappingURL=contactus.module.css.map */

@@ -1,0 +1,18 @@
+.accordian {
+  padding: 1rem;
+  background-color: lightgrey;
+  transition: 0.4s;
+  
+}
+
+.accordian-content {
+  max-height: 0;
+  overflow: hidden;
+  
+  &.active {
+    padding: 1rem;
+    max-height: fit-content;
+    transition-delay: 1s;
+    transition: max-height 1.3s ease-out;
+  }
+}

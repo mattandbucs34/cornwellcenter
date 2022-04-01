@@ -1,0 +1,23 @@
+.accordian {
+  padding: 1rem;
+  background-color: lightgrey;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.accordian-content {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.accordian-content.active {
+  padding: 1rem;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transition: max-height 1.3s ease-out;
+  transition: max-height 1.3s ease-out;
+}
+/*# sourceMappingURL=accordian.module.css.map */
